@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Barlow", sans-serif;
+  font-family: "Fraunces", serif;
+  font-size: 18px;
+}
+
+.container {
+  max-width: 100%;
+  height: 450vh;
+  margin: 0px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  grid-template-rows: 16fr 11fr 11fr 11fr 16fr 7.5fr 7.5fr;
+  grid-template-areas:
+    "image1 image1 image1 image1"
+    "area1 area1 image2 image2"
+    "image3 image3 area2 area2"
+    "image4 image4 image5 image5"
+    "testimonials testimonials testimonials testimonials "
+    "image6 image7 image8 image9"
+    "footer footer footer footer";
+}
+
+.image1 {
+  grid-area: image1;
+  background: url("/images/desktop/image-header.jpg") no-repeat top center;
+
+  background-size: cover;
+}
+.logo img {
+  height: auto;
+  padding: 1.6rem;
+}
+.image1 h2 {
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 8px;
+  padding: 75px;
+}
+.nav {
+  display: grid;
+
+  margin-top: 20px;
+
+  grid-template-columns: 6fr 6fr;
+  align-items: center;
+  width: 100%;
+}
+.arrow {
+  justify-content: center;
+  display: flex;
+}
+
+ul li a {
+  color: hsl(0, 0%, 100%);
+  list-style: none;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.233);
+}
+
+ul {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+li {
+  text-decoration: none;
+  list-style: none;
+  margin-left: 20px;
+  color: hsl(0, 0%, 100%);
+  font-family: "Barlow", sans-serif;
+}
+
+.area1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: area1;
+  background-color: hsl(0, 0%, 100%);
+}
+.area2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: area2;
+  background-color: hsl(0, 0%, 100%);
+}
+.image2 {
+  grid-area: image2;
+  background: url("/images/desktop/image-transform.jpg") no-repeat top center;
+  background-size: cover;
+}
+.image3 {
+  grid-area: image3;
+  background: url("/images/desktop/image-stand-out.jpg") no-repeat top center;
+  background-size: cover;
+}
+.image4 {
+  grid-area: image4;
+  background: url("/images/desktop/image-graphic-design.jpg") no-repeat top
+    center;
+  background-size: cover;
+}
+.image5 {
+  grid-area: image5;
+  background: url("/images/desktop/image-photography.jpg") no-repeat top center;
+  background-size: cover;
+}
+.testimonials {
+  grid-area: testimonials;
+}
+.image6 {
+  grid-area: image6;
+  background: url("/images/desktop/image-gallery-milkbottles.jpg") no-repeat top
+    center;
+  background-size: cover;
+}
+.image7 {
+  grid-area: image7;
+  background: url("/images/desktop/image-gallery-orange.jpg") no-repeat top
+    center;
+  background-size: cover;
+}
+.image8 {
+  grid-area: image8;
+  background: url("/images/desktop/image-gallery-cone.jpg") no-repeat top center;
+  background-size: cover;
+}
+.image9 {
+  grid-area: image9;
+  background: url("/images/desktop/image-gallery-sugarcubes.jpg") no-repeat top
+    center;
+  background-size: cover;
+}
+footer {
+  grid-area: footer;
+  background-color: hsl(168, 60%, 53%);
+}
+.area1-content{
+  padding: 100px;
+ 
+}
+.area2-content{
+  padding: 100px;
+ 
+}
+.area1 p, .area2 p{
+  font-size: 18px;
+  padding-right: 20px;
+  font-family: "Barlow", sans-serif;
+  line-height: 25px;
+  color: hsla(167, 40%, 24%, 0.664);
+}
+.area1 h1 {
+  font-size: 50px;
+  color:hsl(212, 27%, 19%) ;
+}
+.area1 h5, .area2 h5{
+  text-transform: uppercase;
+  font-weight: 900;
+  font-family: "Fraunces", serif;
+  color:  hsl(212, 27%, 19%) ;
+  
+}
+h5 a{
+  text-decoration: underline;
+}
+.area2 h1{
+  font-size: 40px;
+  color:hsl(212, 27%, 19%) ;
+}
+
+ .graphic-design{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 383px 100px 0px 100px;
+  
+ }
+ .graphic-design p{
+  padding: 30px 50px 50px 50px;
+
+  font-size: 18px;
+text-align: center;
+  font-family: "Barlow", sans-serif;
+  line-height: 25px;
+  color: hsl(167, 40%, 24%);
+  
+ }
+ .graphic-design h2{
+  color: hsl(167, 40%, 24%);
+  font-weight: 900;
+ }
+ .photography h2{
+  color: hsl(198, 62%, 26%);
+  font-weight: 900;
+  text-align: center;
+  
+ }
+ .photography p{
+  padding: 30px 50px 50px 50px;
+
+  font-size: 18px;
+text-align: center;
+  font-family: "Barlow", sans-serif;
+  line-height: 25px;
+  color: hsl(198, 62%, 26%);
+  
+ }
+.photography{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 383px 100px 0px 100px;
+  
+ }
