@@ -60,14 +60,14 @@ body {
   display: flex;
 }
 
-ul li a {
+header ul li a {
   color: hsl(0, 0%, 100%);
   list-style: none;
   text-decoration: none;
   padding: 10px 20px;
   border-radius: 20px;
 }
-ul li a:hover {
+header ul li a:hover {
   background-color: rgba(255, 255, 255, 0.233);
 }
 
@@ -232,3 +232,35 @@ text-align: center;
   margin: 383px 100px 0px 100px;
   
  }
+.logo-2{
+  text-align: center;
+  align-items: center;
+  justify-content: center; 
+
+}
+footer{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.footer-nav li{
+  padding: 15px;
+  padding-top: 25px;
+  color: hsl(167, 40%, 24%);
+
+}
+
+.icons li svg:hover path{
+  fill: white;
+  transition: .3s ease;
+}
+
+
+
+.footer-nav .footer li:hover{
+  color: white;
+  transition: .3s ease;
+  cursor: pointer;
+
+}
